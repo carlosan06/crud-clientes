@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #2d3436;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 24px 16px;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header p {
+    color: #dfe6e9;
+    font-size: 0.9rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 16px;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.barra h2 {
+    margin-bottom: 0;
+}
+
+/* Botones */
+.boton {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #2c3e50;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #34495e;
+}
+
+.boton.secundario {
+    background-color: #b2bec3;
+    color: #2d3436;
+}
+
+.boton.peligro {
+    background-color: #d63031;
+}
+
+.boton.peligro:hover {
+    background-color: #b71c1c;
+}
+
+.boton.pequeno {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+}
+
+/* Tabla */
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+th {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+tr:hover td {
+    background-color: #f8f9fa;
+}
+
+td.acciones {
+    display: flex;
+    gap: 6px;
+}
+
+/* Formulario */
+.formulario {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
+}
+
+.formulario label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.formulario input {
+    margin-top: 4px;
+    padding: 10px;
+    border: 1px solid #b2bec3;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.formulario .acciones {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 10px;
+}
+
+/* Mensajes */
+.alerta {
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.alerta ul {
+    padding-left: 20px;
+}
+
+.alerta.exito {
+    background-color: #dff9fb;
+    color: #0c5460;
+}
+
+.alerta.error {
+    background-color: #fdecea;
+    color: #a94442;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #636e72;
+}
